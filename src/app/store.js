@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import AdminReducer from "../features/admin/AdminSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    admin: AdminReducer,
   },
 });

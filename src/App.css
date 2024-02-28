@@ -1,39 +1,57 @@
-.App {
-  text-align: center;
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.card {
+  padding : 20px;
+  background-color: rgb(252, 244, 244);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.manage-keys, .existing-keys, .existing-users, .hour-selector {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.manage-keys label, .existing-keys label, .existing-users label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.manage-keys input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
